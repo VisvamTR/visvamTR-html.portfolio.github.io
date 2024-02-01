@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="urf_output.css">
+</head>
+<body>
+    <div id="det">
+        <h1>User Details :-</h1>
+        <p id="un"></p>
+        <p id="number"></p>
+        <p id="mail"></p>
+        <p id="birth"></p>
+    </div>
+
+    <script src="urf.js"></script>
+
+   <script>
+        var a = localStorage.getItem("name");
+        var b = localStorage.getItem("phn");
+        var c = localStorage.getItem("email");
+        var d = localStorage.getItem("dob");
+
+        document.getElementById("un").innerHTML = "User Name: " + a;
+        document.getElementById("number").innerHTML = "Contact No: " + b;
+        document.getElementById("mail").innerHTML = "Email id: " + c;
+        document.getElementById("birth").innerHTML = "DOB: " + d;
+   </script>
+</body>
+</html>

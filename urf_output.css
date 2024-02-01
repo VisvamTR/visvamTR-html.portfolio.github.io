@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    background-image: url(background.jpg);
+}
+
+#det{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(141, 184, 141);
+}

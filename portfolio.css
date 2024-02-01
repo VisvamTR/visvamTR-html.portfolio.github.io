@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #48142B;
+    color: rgb(255, 255, 255);
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(port_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 200px;
+}
+.nav{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: rgb(104, 192, 244);
+    left: 0;
+    position: absolute;
+    bottom: -6px;
+    transition: 0.8s;
+}
+nav .fa-solid{
+    display: none;
+}
+nav ul li a:hover::after{
+    width: 102%;
+}
+.role-info{
+    margin-top: 15%;
+}
+.role-info p{
+    color: rgb(245, 208, 160);
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.role-info h1{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.role-info h1 span{
+    color: rgb(104, 192, 244);
+}
+.role-info a{
+    color: rgb(104, 192, 244);
+}
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+    background-color: #470d27;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.col1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(156, 193, 242);
+    box-shadow: 0 0 15px;
+    position: relative;
+}
+.col1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.8s;
+}
+.col1 img:hover{
+    transform: scale(2.1) translateY(8%) translateX(-5%);
+}
+.col2{
+    flex: 1;
+}
+.col2 p{
+    text-align: justify;
+}
+.title{
+    font-size: 45px;
+    color: rgb(245, 208, 160);
+}
+.s_title{
+    display: flex;
+    margin: 20px 0;
+}
+.links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: grabbing;
+    position: relative;
+    color: rgb(241, 135, 153);
+}
+.links::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: rgb(104, 192, 244);
+    left: 0;
+    position: absolute;
+    bottom: -6px;
+    transition: 0.8s;
+}
+.links.active::after{
+    width: 50%;
+}
+.t_contents ul li{
+    margin: 10px 10px;
+}
+.t_contents ul li span{
+    color: rgb(104, 192, 244);
+    font-weight: bolder;
+}
+#skills{
+    display: block;
+}
+#education{
+    display: none;
+}
+#pro_container{
+    padding: 0 5%;
+    background-color: #470d27;
+}
+.pro_list_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.pro_list_container div{
+    background: linear-gradient(rgba(125, 115, 115, 0.6),rgb(253, 56, 89));
+    padding: 40px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 20px;
+}
+.pro_list a{
+    font-size: 20px;
+    color: rgb(24, 25, 26);
+    font-weight: bolder;
+    text-decoration: none;
+}
+.pro_list a:hover{
+    color: rgb(104, 192, 244);
+    text-decoration: underline;
+}
+.pro_list_container div:hover{
+    background: linear-gradient(rgb(253, 56, 89),rgba(125, 115, 115, 0.6));
+    transform: translateY(-10px);
+    transition: transform 0.6s;
+    transform: scale(1.1);
+}
+#Contact{
+    padding: 30px 5%;
+    background-color: #470d27;
+}
+.message{
+    margin: 2% 0;
+}
+.message form input{
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: rgb(166, 164, 164);
+    color: rgb(254, 253, 253);
+}
+.message form input::placeholder{
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+}
+.message form textarea{
+    background-color: rgb(166, 164, 164);
+    color: rgb(254, 253, 253);
+}
+.message form textarea::placeholder{
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+}
+.message form button{
+    height: 30px;
+    width: 80px;
+    margin-top: 1%;
+    margin-left: 45%;
+    background: transparent;
+    color: rgb(254, 253, 253);
+    border: 1px solid rgb(218, 165, 32);
+    box-shadow: 0 0 10px;
+}
+.message form button:hover{
+    background-color: rgb(104, 192, 244);
+    box-shadow: none;
+    color: rgb(51, 50, 50);
+    font-weight: bolder;
+}
+.resumee{
+    text-decoration: none;
+    background: rgb(253, 56, 89);
+    padding: 5px;
+    color: rgb(254, 253, 253);
+    border: 1px solid rgb(218, 165, 32);
+}
+.resumee:hover{
+    background: rgb(104, 192, 244);
+    color: rgb(51, 50, 50);
+    font-weight: bolder;
+}
+.social{
+    margin-top: 2%;
+}
+.social p{
+    margin-top: 15px;
+}
+.social p i{
+    color: rgb(253, 56, 89);
+    font-size: 21px;
+}
+.s_icons{
+    margin-top: 1%;
+}
+.s_icons a{
+    color: rgb(253, 56, 89);
+    font-size: 25px;
+}
+.s_icons a:hover{
+    color: rgb(104, 192, 244);
+}
+#textarea{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    nav .fa-solid{
+        display: block;
+    }
+    nav ul{
+        background: rgba(65, 73, 78, 0.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 45vh;
+        padding-top: 30px;
+        display: none;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .role-info p{
+        font-size: 25px;
+    }
+    .role-info h1{
+        font-size: 22px;
+    }
+    .role-info a{
+        font-size: 18px;
+    }
+    #about{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .col1{
+        height: 180px;
+        width: 180px;
+        transition: none;
+    }
+    .col1 img:hover{
+        transform: none;
+    }
+    .col2{
+        padding: 0 5%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .message form button{
+        margin-top: 2%;
+        margin-left: 35%;
+    }
+    .s_icons{
+        margin-top: 3%;
+    }
+}
