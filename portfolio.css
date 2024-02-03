@@ -269,7 +269,7 @@ nav ul li a:hover::after{
         top: 0;
         right: 0;
         width: 150px;
-        height: 45vh;
+        height: auto;
         padding-top: 30px;
         display: none;
         transition: 0.5s;
