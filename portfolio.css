@@ -286,6 +286,10 @@ nav ul li a:hover::after{
     .logo{
         width: 150px;
     }
+    #main{
+        background: url(portfolio_mob_bg.jpg);
+        background-size: cover;
+    }
     .role-info p{
         font-size: 25px;
     }
